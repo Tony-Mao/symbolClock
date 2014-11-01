@@ -160,9 +160,9 @@ function update()
 	*/
 	
 	/*little rotation animation*/
-	for(i = 0; i < 4; i++) // at most rotate 4 times
-	{
-		setTimeout(function () {
+	//for(i = 0; i < 4; i++) // at most rotate 4 times
+	//{
+		//setTimeout(function () {
 			compareThenUpdate("c1", updateNum(hr_1));
 			compareThenUpdate("c2", updateNum(hr_2));
 			compareThenUpdate("c3", updateNum(min_1));
@@ -170,6 +170,6 @@ function update()
 			compareThenUpdate("c5", updateNum(sec_1));
 			compareThenUpdate("c6", updateNum(sec_2));
 		
-		}, 200);
-	}
+		//}, 200);
+	//}
 }
