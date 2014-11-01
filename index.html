@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#mydiv {
+    top: 50%;
+    left: 50%;
+    width:60em;
+    height:20em;
+    margin-top: -10em; /*set to a negative number 1/2 of your height*/
+    margin-left: -30em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    position:fixed;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+</style>
+
+</head>
+
+<script type="text/javascript"
+src="updateNum.js">
+</script>
+
+
+<body>
+   <div id="mydiv">
+   <center>
+   <table>
+      <tr>
+        <td width="140">
+        <table id='c1'></table>
+        </td>
+        <td width="170">
+        <table id='c2'></table>
+        </td>
+        <td width="140">
+        <table id='c3'></table>
+        </td>
+        <td width="180">
+        <table id='c4'></table>
+        </td>
+        <td width="140">
+        <table id='c5'></table>
+        </td>
+        <td width="0">
+        <table id='c6'></table>
+        </td>
+      </tr>
+   </table>
+   </center>
+   </div>
+   <script>
+   	     randomSetup();
+   </script>
+   <script>
+   window.setInterval(function(){
+  		update();
+	}, 1000);
+	</script>
+</body>
+</html>
